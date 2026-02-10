@@ -11,8 +11,16 @@
   <%= image_tag "dice/#{die2}.svg", alt: "Die 2", width: 100 %>
 </p>
 
+<p>
+  Die 1: <%= die1%>
+</p>
+<p>
+  Die 2: <%= die2%>
+</p>
+
 <p><strong>The total is <%= total %></strong></p>
 
 <%= link_to "🎲 Roll again", request.path %>
+<a href="/dice">Roll again (round 2)</a>
 
 
