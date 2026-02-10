@@ -1,0 +1,14 @@
+<%
+  companies = Company.all
+%>
+
+<h1>Companies</h1>
+
+<p>Total: <%= companies.count %></p>
+
+<ul>
+  <% companies.each do |company| %>
+    <li><%= company.name %></li>
+  <% end %>
+</ul>
+
