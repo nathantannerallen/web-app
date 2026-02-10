@@ -1,20 +1,18 @@
-<!-- 
-https://entr451.com/programming-fundamentals-lab-1-solution/
--->
-
-<% 
-
+<%
   die1 = rand(1..6)
-  puts die1 
-
   die2 = rand(1..6)
-  puts die1
-
   total = die1 + die2
-  puts "The total is #{total}"
-
 %>
 
-<%= "The Total is "%><%=total%>
+<h2>Dice Roll</h2>
+
+<p>
+  <%= image_tag "dice/#{die1}.svg", alt: "Die 1", width: 100 %>
+  <%= image_tag "dice/#{die2}.svg", alt: "Die 2", width: 100 %>
+</p>
+
+<p><strong>The total is <%= total %></strong></p>
+
+<%= link_to "🎲 Roll again", request.path %>
 
 
